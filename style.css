@@ -170,9 +170,9 @@ button,
   .button.minor:hover   { background-color:#ec6c45; }
 
   .button.new,
-  .button.good         { background-color:#90bb74; }
+  .button.good         { background-color:#676BF3; }
   .button.new:hover,
-  .button.good:hover   { background-color:#73955c; }
+  .button.good:hover   { background-color: hsl(238, 85%, 55%); }
 
   .listing .actions .delete:active,
   .listing .actions .delete:hover { border-color:#d35252; }
@@ -328,7 +328,7 @@ del {
 ins {
   background:#D4ECB6;
   text-decoration:none;
-  color:#73955c;
+  color: hsl(238, 85%, 55%);
   padding:1px 0;
   }
 
@@ -436,10 +436,10 @@ ins {
   }
 
 .prose a {
-  color: #90BB74;
+  color: #676BF3;
   }
   .prose a:hover {
-    color:#73955C;
+    color:  hsl(238, 85%, 55%);
     }
 
 .prose code {
@@ -757,16 +757,16 @@ ins {
 .icon.md           { background-position:-80px 0; }
 
 .nav .ico.login,
-.ico.login         { background-color:#90bb74; color:#fff; }
+.ico.login         { background-color:#676BF3; color:#fff; }
 
 .nav .ico.login:hover,
 .ico.login:hover {
-  background-color:#73955c;
+  background-color: hsl(238, 85%, 55%);
   }
 
 .published .ico.checkmark,
 .ico.checkmark,
-.ico.added         { color:#90bb74; }
+.ico.added         { color:#676BF3; }
 .ico.modified      { color:#2099aa; }
 .ico.removed       { color:#d35252; }
 .ico.error         { color:#db6f6f; }
@@ -832,7 +832,7 @@ ins {
   }
 .saved .save .status:before {
   content:'\f103';
-  color:#90bb74;
+  color:#676BF3;
   }
 
 .ico.picture-add {
@@ -944,57 +944,57 @@ ins {
       }
 
 @-webkit-keyframes spin {
-	0%    { -webkit-transform: rotate(0deg); }	
+	0%    { -webkit-transform: rotate(0deg); }
 	100%  { -webkit-transform: rotate(360deg); }
   }
 @-moz-keyframes spin {
-	0%    { -moz-transform: rotate(0deg); }	
+	0%    { -moz-transform: rotate(0deg); }
 	100%  { -moz-transform: rotate(360deg); }
   }
 @-o-keyframes spin {
-	0%    { -o-transform: rotate(0deg); }	
+	0%    { -o-transform: rotate(0deg); }
 	100%  { -o-transform: rotate(360deg); }
   }
 @keyframes spin {
-	0%    { transform: rotate(0deg); }	
+	0%    { transform: rotate(0deg); }
 	100%  { transform: rotate(360deg); }
   }
 
 @-webkit-keyframes saved {
-	0%    { -webkit-transform:scale(1); opacity:1; }	
+	0%    { -webkit-transform:scale(1); opacity:1; }
 	100%  { -webkit-transform:scale(1.5); opacity:0; }
   }
 @-moz-keyframes saved {
-	0%    { -moz-transform:scale(1); opacity:1; }	
+	0%    { -moz-transform:scale(1); opacity:1; }
 	100%  { -moz-transform:scale(1.5); opacity:0; }
   }
 @-o-keyframes saved {
-	0%    { -o-transform:scale(1); opacity:1; }	
+	0%    { -o-transform:scale(1); opacity:1; }
 	100%  { -o-transform:scale(1.5); opacity:0; }
   }
 @keyframes saved {
-	0%    { transform:scale(1); opacity:1; }	
+	0%    { transform:scale(1); opacity:1; }
 	100%  { transform:scale(1.5); opacity:0; }
   }
 
 @-webkit-keyframes pulsate {
-	0%    { -webkit-box-shadow:0 0 2px rgb(211,82,82); }	
-	50%   { -webkit-box-shadow:0 0 6px rgba(211,82,82,0.5); }	
+	0%    { -webkit-box-shadow:0 0 2px rgb(211,82,82); }
+	50%   { -webkit-box-shadow:0 0 6px rgba(211,82,82,0.5); }
 	100%  { -webkit-box-shadow:0 0 2px rgb(211,82,82); }
   }
 @-moz-keyframes pulsate {
-	0%    { box-shadow:0 0 2px rgb(211,82,82); }	
-	50%   { box-shadow:0 0 6px rgba(211,82,82,0.5); }	
+	0%    { box-shadow:0 0 2px rgb(211,82,82); }
+	50%   { box-shadow:0 0 6px rgba(211,82,82,0.5); }
 	100%  { box-shadow:0 0 2px rgb(211,82,82); }
   }
 @-o-keyframes pulsate {
-	0%    { box-shadow:0 0 2px rgb(211,82,82); }	
-	50%   { box-shadow:0 0 6px rgba(211,82,82,0.5); }	
+	0%    { box-shadow:0 0 2px rgb(211,82,82); }
+	50%   { box-shadow:0 0 6px rgba(211,82,82,0.5); }
 	100%  { box-shadow:0 0 2px rgb(211,82,82); }
   }
 @keyframes pulsate {
-	0%    { box-shadow:0 0 2px rgb(211,82,82); }	
-	50%   { box-shadow:0 0 6px rgba(211,82,82,0.5); }	
+	0%    { box-shadow:0 0 2px rgb(211,82,82); }
+	50%   { box-shadow:0 0 6px rgba(211,82,82,0.5); }
 	100%  { box-shadow:0 0 2px rgb(211,82,82); }
   }
 
@@ -1323,12 +1323,12 @@ ins {
     margin:15px 0;
     }
   .dialog a {
-    color:#90BB74;
+    color:#676BF3;
     text-decoration:underline;
     }
     .dialog a.active,
     .dialog a:hover {
-      color:#73955C;
+      color: hsl(238, 85%, 55%);
       }
     .dialog .button,
     .dialog .button:hover {
@@ -1371,7 +1371,7 @@ ins {
       background:transparent;
       border:none;
       padding:0;
-      color:#90BB74;
+      color:#676BF3;
       font-weight:700!important;
       text-decoration:underline;
       -webkit-box-shadow:none;
@@ -1734,7 +1734,7 @@ ins {
     display:none;
     }
     .drag-over .drop-mask       { display:block; }
-    .drag-over .ico.picture-add { color:#90bb74; }
+    .drag-over .ico.picture-add { color:#676BF3; }
 
   .post .view.diff pre {
     background:transparent;
@@ -1799,10 +1799,10 @@ ins {
           background-color:#a8afb2;
           }
       .form-item button[value='false'] {
-        background-color:#90bb74;
+        background-color:#676BF3;
         }
         .form-item button[value='false']:hover {
-          background-color:#73955c;
+          background-color: hsl(238, 85%, 55%);
           }
     .meta .create {
       position:relative;
@@ -2281,7 +2281,7 @@ ins {
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
   width: auto;
   border: 0;
-  background: #90bb74;
+  background: #676BF3;
   z-index: 1;
 }
 /* Can style cursor different in overwrite (non-insert) mode */
@@ -2325,8 +2325,8 @@ ins {
 .cm-s-prose-bright span.cm-variable-3 { color:#82a367; }
 
 /* Light Turtle Green */
-.cm-s-prose-bright span.cm-attribute  { color:#90bb74; }
-.cm-s-prose-bright span.cm-def        { color:#90bb74; }
+.cm-s-prose-bright span.cm-attribute  { color:#676BF3; }
+.cm-s-prose-bright span.cm-def        { color:#676BF3; }
 
 /* Brick */
 .cm-s-prose-bright span.cm-keyword    { color:#ec6c45; }

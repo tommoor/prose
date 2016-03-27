@@ -9,6 +9,7 @@ var Folder = require('../models/folder');
 var cookie = require('../cookie');
 var util = require('../util');
 var ignore = require('ignore');
+var conf = require('../config');
 
 module.exports = Backbone.Collection.extend({
   model: function(attributes, options) {
@@ -177,6 +178,7 @@ module.exports = Backbone.Collection.extend({
 
   parseIgnore: function(ignorePatterns) {
     var ignoreFilter = ignore().addPattern(ignorePatterns).createFilter();
+
     this.filteredModel = new Backbone.Collection(this.filter(function(file) {
       return ignoreFilter(file.id);
     }));
@@ -192,6 +194,10 @@ module.exports = Backbone.Collection.extend({
       success: (function(model, res, options) {
         var config = this.findWhere({ path: '_prose.yml' }) ||
           this.findWhere({ path: '_config.yml' });
+
+        if (conf.ignore) {
+          this.parseIgnore(conf.ignore);
+        }
 
         if (config) {
           config.fetch({

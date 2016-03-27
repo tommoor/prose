@@ -8,5 +8,10 @@ module.exports = {
   id: oauth.clientId,
   url: oauth.gatekeeperUrl,
   username: cookie.get('username'),
-  auth: 'oauth'
+  auth: 'oauth',
+  ignore: [
+    '.DS_Store',
+    '.gitignore',
+    '.remarkrc'
+  ]
 };
