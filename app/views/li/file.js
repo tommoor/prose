@@ -27,8 +27,10 @@ module.exports = Backbone.View.extend({
 
     if (!this.model.get('binary')) {
       this.$el.attr('data-navigate', '#' + this.repo.get('owner').login + '/' +
-        this.repo.get('name') + '/edit/' + this.branch + '/' +
+        this.repo.get('name') + '/blob/' + this.branch + '/' +
         this.model.get('path'));
+    } else {
+      this.$el.attr('data-navigate', this.model.get('content_url'));
     }
   },
 
